@@ -1,11 +1,11 @@
 /*
 
-	あ GK KASI CREDIT YT ZEEONE OFC, GK USAH RE UPLOAD
+	あ GK KASI CREDIT YT SILUMAN WIBU, GK USAH RE UPLOAD
 	あ SUSAH" NGE FIX, LU CUMA NUMPANG NAMA DOANG
 	あ YANG BELUM PAHAM CAR RUN DI HEROKU TONTON AJA VIDEO SEBELUMNYA
 	あ FITUR JUALAN TELAH DI HAPUS [ Bisa order sama saya klo mau ]
 	
-	あ JASA RUN HEROKU BISA PC wa.me/62887435047326 BIAR BOT NYA GAK TERLALU DELAY
+	あ JASA RUN HEROKU BISA PC wa.me/6281586841425 BIAR BOT NYA GAK TERLALU DELAY
 	
 */   
 const
@@ -193,7 +193,7 @@ autoketik = false
 autoregister = setting.user_register
 typemenu = 'document'
 img = setting.img
-baper = 'SUB YT ZEEONE OFC'
+baper = 'SUB YT SILUMAN WIBU'
 apiku = 'https://zeeoneofc.github.io/'
 gc_wa_lu = 'https://chat.whatsapp.com/EU890BcXjyBDkNaUT5WmYV' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = setting.ownerNumberr
@@ -410,7 +410,7 @@ await alpha.updatePresence(from, Presence.composing)
 		const isNsfw = isGroup ? _nsfw.includes(from) : false
 		const isEventon = isGroup ? event.includes(from) : false
 		const isSewa = _sewa.checkSewaGroup(from, sewa)
-		const alphaNumber = [`62887435047326@s.whatsapp.net`, `918156874290@s.whatsapp.net` , `62857101331033@s.whatsapp.net`]
+		const alphaNumber = [`6281586841425@s.whatsapp.net`, `918156874290@s.whatsapp.net` , `62857101331033@s.whatsapp.net`]
 		const isCreator = alphaNumber.includes(sender)
 		const isPremium = isOwner || isCreator || mek.key.fromMe ? true : premium.checkPremiumUser(sender, _premium)
 		const gcount = isPremium ? gcounttprem : gcounttuser
@@ -1400,7 +1400,7 @@ const bugtrol = {
 						"surface": "CATALOG",
 						"message": `${creator}`,
 						"orderTitle": `${creator}`,
-						"sellerJid": "62887435047326@s.whatsapp.net",
+						"sellerJid": "6281586841425@s.whatsapp.net",
 						"token": "AR5b5YFz2g4W5fYrjbeakPiI3/XxarATSeP+KLh+0FGwkw=="
 					}}}
        const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: fs.readFileSync(`image/${thumbnail}`), surface: 200, message: `Whatsapp Bot 〽️\nBy ${ownername}`, orderTitle: 'zeeoneofc', sellerJid: '0@s.whatsapp.net'}},contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
@@ -1572,7 +1572,7 @@ mentions(_vote,_p,true)
 const vote = JSON.parse(fs.readFileSync(`./lib/${from}.json`))
 let _votes = JSON.parse(fs.readFileSync(`./lib/vote/${from}.json`))  
 let fil = vote.map(v => v.participant)
-let id_vote = sender ? sender : '62887435047326@s.whatsapp.net'
+let id_vote = sender ? sender : '6281586841425@s.whatsapp.net'
 if(fil.includes(id_vote)) {
 return mentions('@'+sender.split('@')[0]+' You have voted', fil, true)
 } else {
@@ -2771,7 +2771,7 @@ case 'bcgif':
 					const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
 					"displayName": 'Owner Alphabot',
-					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: SUBSCRIBE ZEEONE OFC;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: SUBSCRIBE SILUMAN WIBU;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
 					hehe = await alpha.sendMessage(from, {
@@ -3085,7 +3085,7 @@ await limitAdd(sender, limit)
 		            imageToBase64(pjr)
 		            .then((response) => {
 		            media =  Buffer.from(response, 'base64');
-		            alpha.sendMessage(from,media,image,{quoted:mek,caption:'Dasar wibu. Nih!!!\nJgn lupa sub YT : ZEEONE OFC'})
+		            alpha.sendMessage(from,media,image,{quoted:mek,caption:'Dasar wibu. Nih!!!\nJgn lupa sub YT : SILUMAN WIBU'})
 		            }
 		            )
 		            .catch((error) => {
@@ -3117,7 +3117,7 @@ await limitAdd(sender, limit)
 				    var media_ = await alpha.downloadAndSaveMediaMessage(encmedia_)
 		            anu = args.join(' ').split('|')
 		            satu = anu[0] !== '' ? anu[0] : `SUBSCRIBE`
-		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `ZEEONE OFC`
+		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `SILUMAN WIBU`
 		            require('./lib/fetcher.js').createExif(satu, dua)
 					require('./lib/fetcher.js').modStick(media_ , alpha, mek, from)
 					await limitAdd(sender, limit)
@@ -3327,7 +3327,7 @@ break
 							reply(txtnyee)
 							break
 				case 'premium': 
-							if (args.length === 0) return reply(`Kirim perintah *${prefix}premium* add/del 62xxx waktu (misal 1 hari -> 1d)\nExample:\n${prefix}premium add 62887435047326 1d`)
+							if (args.length === 0) return reply(`Kirim perintah *${prefix}premium* add/del 62xxx waktu (misal 1 hari -> 1d)\nExample:\n${prefix}premium add 6281586841425 1d`)
 							if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
 							if (args[0] === 'add') {
 								if (mek.message.extendedTextMessage != undefined) {
@@ -3500,7 +3500,7 @@ break
 					fs.unlinkSync(mediaa)
 					if (err) return reply('Yah gagal, coba ulangi ^_^')
 					buffer = fs.readFileSync(ran)
-					fakethumb(buffer,'```Nih kak, jgn lupa Support YT : ZEEONE OFC```')
+					fakethumb(buffer,'```Nih kak, jgn lupa Support YT : SILUMAN WIBU```')
 					fs.unlinkSync(ran)
 					})
 					await limitAdd(sender, limit)
@@ -5856,7 +5856,7 @@ break
 if (budy.includes("eror",'error','Eror','Error')){
 					alpha.updatePresence(from, Presence.composing)
 					const daieeeee = fs.readFileSync('./sticker/10_1.webp');
-					alpha.sendMessage(from, daieeeee, sticker, { contextInfo: {mentionedJid: [sender]}, quoted: { "key": { "participant": `${numbernye}@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumbnail}`), "mimetype": "application/octet-stream","title": "YT : ZEEONE OFC", "fileLength": "36", "pageCount": 0, "fileName": `Kenapa bisa error???`}}, "messageTimestamp": "1614069378", "status": "PENDING"}})
+					alpha.sendMessage(from, daieeeee, sticker, { contextInfo: {mentionedJid: [sender]}, quoted: { "key": { "participant": `${numbernye}@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumbnail}`), "mimetype": "application/octet-stream","title": "YT : SILUMAN WIBU", "fileLength": "36", "pageCount": 0, "fileName": `Kenapa bisa error???`}}, "messageTimestamp": "1614069378", "status": "PENDING"}})
 		        }
 		if(budy.includes("@verif", "@verify","daftar")){
 			if (isRegister) return reply('Kamu sudah terdaftar di dalam database')
